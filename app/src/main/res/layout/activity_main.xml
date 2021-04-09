@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    tools:context=".MainActivity">
+
+    <com.example.qw.AutoFitTextureView
+        android:id="@+id/preview_texture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="top"
+        android:orientation="horizontal"
+        android:background="@color/just_gray_alpha">
+
+        <Button
+            android:id="@+id/four_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/four_third"/>
+
+        <Button
+            android:id="@+id/sixteen_nine"
+            android:text="@string/sixteen_nine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="20dp"
+        android:background="@color/just_gray_alpha">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="35dp">
+
+            <Button
+                android:id="@+id/take_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/take_video"
+                android:layout_marginLeft="150dp"/>
+
+            <Button
+                android:id="@+id/take_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/take_picture"
+                android:layout_marginLeft="50dp"/>
+
+            <ImageView
+                android:id="@+id/change_camera_id"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/drawable_change_id"
+               android:src="@mipmap/change_id" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>
